@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+.container{
+   
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    
+}
+h1{
+    width: 26rem;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.texts{
+    margin-top: 10rem;
+    color: white;
+}
+#texts{
+margin-top: 2rem;
+width: 32rem;
+font-weight: 400;
+color: rgb(241, 235, 235);
+}
+table{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 8px 0 rgb(0 0 0 / 0.16);
+    margin-top: 1.4rem;
+}
+.name{
+    color: red;
+    text-align: end;
+    font-style: italic;
+    
+}
+.names{
+    color: red;
+    text-align: end;
+    font-style: italic;
+}
+#err1,#err2,#err3,#err4{
+  
+    visibility: hidden;
+}
+.pic{
+    visibility: hidden;
+    position: relative;
+    right: 40px;
+    
+}
+.field{
+    padding-right: 26px;
+    background: url(./images/icon-error.svg);
+    background-size: 20px;
+    background-position: 30rem 1rem;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+.no-background{
+    background-image: none;
+}
+input{
+    width: 30rem;
+    height: 3rem;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    border: solid 1px rgb(226, 220, 220);
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+input::placeholder{
+    font-weight: 600;
+}
+input:hover{
+ border: solid 1px black;
+}
+input:active{
+    border: solid 1px black;
+}
+#btn{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+}
+#trial{
+    background-color: hsl(248, 32%, 49%);
+    margin-top: 4rem;
+    padding: 1.4rem;
+    color: white;
+    text-align: center;
+    width: 33rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 8px 0 rgb(0 0 0 / 0.16);
+}
+#clicks{
+    color: rgb(204, 199, 199);
+    text-align: center;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+@media only screen and (max-width:1200px) and (min-width:700px){
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    table{
+        width: 22rem;
+    }
+    input{
+        width: 20rem;
+    }
+    #trial{
+        width: 23rem;
+    }
+    h1{
+        width: 20rem;
+    }
+    #texts{
+        width: 20rem;
+    }
+    .field{
+        padding-right: 26px;
+        background: url(./images/icon-error.svg);
+        background-size: 20px;
+        background-position: 20rem 1rem;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:700px){
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+        height: 100%;
+        
+        
+       
+    }
+    .container{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    h1{
+        width: 20rem;
+        font-size: 24px;
+        margin-top: 8rem;
+        line-height: 2rem;
+    }
+    #texts{
+        width: 20rem;
+        margin-top: 1rem;
+    }
+    #trial{
+        width: 18rem;
+        text-align: center;
+       margin: 0 auto;
+       margin-top: 2rem;
+    }
+    table{
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 17rem;
+        margin-bottom: 2rem;
+    }
+    input{
+        width: 16rem;
+    }
+    .field{
+        padding-right: 26px;
+        background: url(./images/icon-error.svg);
+        background-size: 20px;
+        background-position: 16rem 1rem;
+        background-repeat: no-repeat;
+    }
+    
+}
