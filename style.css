@@ -42,15 +42,18 @@ table{
     margin-top: 1.4rem;
 }
 .name{
-    color: red;
+    color: hsl(0, 100%, 74%);
     text-align: end;
     font-style: italic;
     
 }
 .names{
-    color: red;
+    color: hsl(0, 100%, 74%);
     text-align: end;
     font-style: italic;
+}
+.email-error{
+    color: hsl(0, 100%, 74%);
 }
 #err1,#err2,#err3,#err4{
   
@@ -69,6 +72,7 @@ table{
     background-position: 30rem 1rem;
     background-repeat: no-repeat;
     backface-visibility: hidden;
+    border: solid 2px hsl(0, 100%, 74%);
 }
 .no-background{
     background-image: none;
@@ -100,6 +104,7 @@ input:active{
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
+    
 }
 #trial{
     background-color: hsl(248, 32%, 49%);
@@ -115,6 +120,7 @@ input:active{
     color: rgb(204, 199, 199);
     text-align: center;
     font-size: 12px;
+    margin-top: 1rem;
 }
 a{
     text-decoration: none;

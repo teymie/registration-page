@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./main.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="texts">
@@ -19,43 +21,58 @@
                 developers think is invaluable.
             </p>
         </div>
-        
-       <div class="container2">
-        <p id="trial"><strong>Try it free 7 days</strong> then $20/mo . thereafter</p>
-        <table>
-           <form action="" id="info">
-               <tr>
-                  <td class="details"><input  type="text" placeholder="First Name" id="firstname"></td>
-                  </tr>
-                  <tr id="err1">
-                    <td><p class="name">First Name cannot be empty</p></td>
+
+        <div class="container2">
+            <p id="trial"><strong>Try it free 7 days</strong> then $20/mo . thereafter</p>
+            <table>
+                <form action="" id="info">
+                    <tr>
+                        <td class="details"><input type="text" placeholder="First Name" id="firstname" required></td>
                     </tr>
-                 <tr>
-                   <td class="details" id="first"><input type="text" placeholder="Last Name" id="lastname" ></td>
-                   </tr>
-                   <tr id="err2">
-                    <td ><p class="name" id="second">Last Name cannot be empty</p></td>
+                    <tr id="err1">
+                        <td>
+                            <p class="name">First Name cannot be empty</p>
+                        </td>
                     </tr>
-                 <tr>
-                   <td class="details"><input type="email" placeholder="Email Address" id="email"></td>
-                   </tr>
-                   <tr id="err3">
-                    <td><p class="name" id="third">Looks like this is not an email </p></td>
+                    <tr>
+                        <td class="details" id="first"><input type="text" placeholder="Last Name" id="lastname"
+                                required></td>
                     </tr>
-                 <tr>
-                   <td class="details"><input type="password" placeholder="Password" id="password" ></td>
-               </tr>
-               <tr id="err4">
-                <td><p class="name" id="last">Password cannot be empty</p></td>
-                </tr>
-               <tr>
-                <td><input type="button" value="CLAIM YOUR FREE TRIAL" id="btn"></td>
-               </tr>
-               <tr><td><p id="clicks">By clicking the button you are agreeing to our <a href="#">Terms and Services</a> </p></td></tr>
-           </form>
-       </table>
-       </div>
+                    <tr id="err2">
+                        <td>
+                            <p class="name" id="second">Last Name cannot be empty</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="details"><input type="email" placeholder="Email Address" id="email" required></td>
+                    </tr>
+                    <tr id="err3">
+                        <td>
+                            <p class="name" id="third">Looks like this is not an email </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="details"><input type="password" placeholder="Password" id="password" required></td>
+                    </tr>
+                    <tr id="err4">
+                        <td>
+                            <p class="name" id="last">Password cannot be empty</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="CLAIM YOUR FREE TRIAL" id="btn"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="clicks">By clicking the button you are agreeing to our <a href="#">Terms and
+                                    Services</a> </p>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
     </div>
-    
+
 </body>
+
 </html>

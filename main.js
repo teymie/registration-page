@@ -8,54 +8,64 @@ var lname = document.getElementById('lastname')
 var pass = document.getElementById('password')
 var mail = document.getElementById('email')
 
-btn.addEventListener('click' ,function (e) {
-   
-        if (fname.value =='') {
+btn.addEventListener('click', function (e) {
+
+    if (fname.value == '') {
         document.getElementById('err1').style.visibility = 'visible'
         fname.classList.add('field')
         fname.classList.remove('no-background')
-        
-        }
-        
-   
+        fname.placeholder = ""
+
+
+    }
+
+
     fname.addEventListener('click', function () {
-        document.getElementById('err1').style.visibility = 'hidden'  
+        document.getElementById('err1').style.visibility = 'hidden'
         fname.classList.remove('field')
     })
-    if (lname.value =='') {
+    if (lname.value == '') {
         document.getElementById('err2').style.visibility = 'visible'
         lname.classList.add('field')
         lname.classList.remove('no-background')
-        }
-        
-   
+        lname.placeholder = ""
+    }
+
+
     lname.addEventListener('click', function () {
         document.getElementById('err2').style.visibility = 'hidden'
-        lname.classList.remove('field')  
+        lname.classList.remove('field')
     })
-    if (pass.value =='') {
+    if (pass.value == '') {
         document.getElementById('err4').style.visibility = 'visible'
         pass.classList.add('field')
         pass.classList.remove('no-background')
-        }
-        
-   
+        pass.placeholder = ""
+
+    }
+
+
     pass.addEventListener('click', function () {
-        document.getElementById('err4').style.visibility = 'hidden' 
-        pass.classList.remove('field') 
+        document.getElementById('err4').style.visibility = 'hidden'
+        pass.classList.remove('field')
     })
-    if (mail.value =='') {
+    if (mail.value == '') {
         document.getElementById('err3').style.visibility = 'visible'
         mail.classList.add('field')
         mail.classList.remove('no-background')
-        }
-        
-   
+        mail.value = "email@example/com"
+        mail.classList.add('email-error')
+    }
+
+
     mail.addEventListener('click', function () {
-        document.getElementById('err3').style.visibility = 'hidden' 
-        mail.classList.remove('field') 
+        document.getElementById('err3').style.visibility = 'hidden'
+        mail.classList.remove('field')
+        mail.value = ""
+        mail.placeholder = ""
+        mail.classList.remove('email-error')
     })
-   
-    
-    
+
+
+
 })
